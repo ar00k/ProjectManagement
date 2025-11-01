@@ -23,9 +23,9 @@
 
 \pretitle{\begin{center}\small{ZARZĄDZANIE PROJEKTEM}\\\vspace{1cm}\LARGE\bfseries}
 \title{PLAN PROJEKTU}
-\posttitle{\vspace{1cm}\\[2cm]\end{center}}
-\author{}
-\date{}
+\posttitle{\vspace{1cm}\\\large{\textit{PARKING PODZIEMNY}}\\[2cm]\end{center}}
+
+
 \usepackage[polish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -38,11 +38,36 @@
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+% New command for bottom dots
+\newcommand{\bdots}{\vspace*{\fill}\dotfill}
+
 \pagestyle{empty}
 \geometry{margin=0.5in}
+\date{}  % This will remove the date
 
 \begin{document}
 \maketitle
+
+\begin{center}
+\begin{tabularx}{\textwidth}{X X X X}
+\hline
+{\centering Imię i nazwisko\par} & {\centering EUU1\par} & {\centering EUU2\par} & {\centering EUK1\par} \\[5ex]
+\hline
+\rule{0pt}{4ex}
+\multirow{2}{*}{Dominik Żuchowicz} & \bdots & \bdots & \bdots \\[1ex]
+\textit{(kierownik projektu)} & & & \\[4ex]
+Maciej Wójs & \bdots & \bdots & \bdots \\[4ex]
+Jakub Tokarczyk & \bdots & \bdots & \bdots \\[4ex]
+Arkadiusz Ryczek & \bdots & \bdots & \bdots \\[4ex]
+\end{tabularx}
+\end{center}
+\texttt{Informatyka, I stopień, 3 rok\\
+Grupa nr: 4\\
+Studia: stacjonarne\\
+}
 \end{document}
 
 
